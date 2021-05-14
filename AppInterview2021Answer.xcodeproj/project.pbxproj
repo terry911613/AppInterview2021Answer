@@ -13,6 +13,10 @@
 		448155B7264E59BB00BB30D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448155B5264E59BB00BB30D6 /* Main.storyboard */; };
 		448155B9264E59BC00BB30D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448155B8264E59BC00BB30D6 /* Assets.xcassets */; };
 		448155BC264E59BC00BB30D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448155BA264E59BC00BB30D6 /* LaunchScreen.storyboard */; };
+		448155C7264E5A0C00BB30D6 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155C5264E5A0C00BB30D6 /* NumberCollectionViewCell.swift */; };
+		448155C8264E5A0C00BB30D6 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448155C6264E5A0C00BB30D6 /* NumberCollectionViewCell.xib */; };
+		448155CC264E5A1D00BB30D6 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155CB264E5A1D00BB30D6 /* Number.swift */; };
+		448155D0264E5A2700BB30D6 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448155CF264E5A2700BB30D6 /* NumberViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		448155B8264E59BC00BB30D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448155BB264E59BC00BB30D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448155BD264E59BC00BB30D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448155C5264E5A0C00BB30D6 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		448155C6264E5A0C00BB30D6 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
+		448155CB264E5A1D00BB30D6 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		448155CF264E5A2700BB30D6 /* NumberViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		448155AE264E59BB00BB30D6 /* AppInterview2021Answer */ = {
 			isa = PBXGroup;
 			children = (
+				448155CE264E5A1F00BB30D6 /* ViewModel */,
+				448155CA264E5A1300BB30D6 /* Model */,
+				448155C4264E5A0000BB30D6 /* CollectionViewCell */,
 				448155AF264E59BB00BB30D6 /* AppDelegate.swift */,
 				448155B1264E59BB00BB30D6 /* SceneDelegate.swift */,
 				448155B3264E59BB00BB30D6 /* ViewController.swift */,
@@ -65,6 +76,31 @@
 				448155BD264E59BC00BB30D6 /* Info.plist */,
 			);
 			path = AppInterview2021Answer;
+			sourceTree = "<group>";
+		};
+		448155C4264E5A0000BB30D6 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				448155C5264E5A0C00BB30D6 /* NumberCollectionViewCell.swift */,
+				448155C6264E5A0C00BB30D6 /* NumberCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		448155CA264E5A1300BB30D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				448155CB264E5A1D00BB30D6 /* Number.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		448155CE264E5A1F00BB30D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				448155CF264E5A2700BB30D6 /* NumberViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448155BC264E59BC00BB30D6 /* LaunchScreen.storyboard in Resources */,
+				448155C8264E5A0C00BB30D6 /* NumberCollectionViewCell.xib in Resources */,
 				448155B9264E59BC00BB30D6 /* Assets.xcassets in Resources */,
 				448155B7264E59BB00BB30D6 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448155CC264E5A1D00BB30D6 /* Number.swift in Sources */,
 				448155B4264E59BB00BB30D6 /* ViewController.swift in Sources */,
+				448155C7264E5A0C00BB30D6 /* NumberCollectionViewCell.swift in Sources */,
+				448155D0264E5A2700BB30D6 /* NumberViewModel.swift in Sources */,
 				448155B0264E59BB00BB30D6 /* AppDelegate.swift in Sources */,
 				448155B2264E59BB00BB30D6 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVB2JZ6L9X;
 				INFOPLIST_FILE = AppInterview2021Answer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVB2JZ6L9X;
 				INFOPLIST_FILE = AppInterview2021Answer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
